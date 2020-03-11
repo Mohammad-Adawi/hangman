@@ -1,4 +1,4 @@
-
+// creating hanger setup
 hanger = new Array ("--------\n|      |\n|\n|\n|\n|\n=====",
 "--------\n|      O\n|\n|\n|\n|\n=====",
 "--------\n|      O\n|      |\n|\n|\n|\n=====",
@@ -8,8 +8,7 @@ hanger = new Array ("--------\n|      |\n|\n|\n|\n|\n=====",
 "--------\n|      O\n|     \\|/\n|      |\n|     /\n|\n=====",
 "--------\n|      O\n|     \\|/\n|      |\n|     / \\\n|\n=====")
 
-// guessChoices = new Array("JavaScript","Navigator","LiveConnect","LiveWire")
-guessChoices = new Array("KEVIN","AARON","WARREN","COLE","BO")
+guessChoices = new Array("KEVIN","AARON","WARREN","COLE","BOCEN")
 function startAgain() {
  guesses = 0
  max = hanger.length-1
