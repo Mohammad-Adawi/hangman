@@ -1,5 +1,5 @@
-// creating hanger setup
-hanger = new Array ("--------\n|      |\n|\n|\n|\n|\n=====",
+// creating HANGMAN gallows
+hangMan = new Array ("--------\n|      |\n|\n|\n|\n|\n=====",
 "--------\n|      O\n|\n|\n|\n|\n=====",
 "--------\n|      O\n|      |\n|\n|\n|\n=====",
 "--------\n|      O\n|     \\|\n|\n|\n|\n=====",
@@ -9,9 +9,9 @@ hanger = new Array ("--------\n|      |\n|\n|\n|\n|\n=====",
 "--------\n|      O\n|     \\|/\n|      |\n|     / \\\n|\n=====")
 
 guessChoices = new Array("KEVIN","AARON","WARREN","COLE","BOCEN")
-function startAgain() {
+function start() {
  guesses = 0
- max = hanger.length-1
+ max = hangMan.length-1
  guessed = " "
  len = guessChoices.length - 1
  toGuess = guessChoices[Math.round(len*Math.random())].toUpperCase()
@@ -26,7 +26,7 @@ function stayAway() {
 }
 
 function displayHangman() {
- document.game.status.value=hanger[guesses]
+ document.game.status.value=hangMan[guesses]
 }
 
 function displayToGuess() {
@@ -63,10 +63,10 @@ function guess(s){
  displayGuessed()
  if(guesses >= max){
  alert("You Lose! Try again? The word you missed was "+toGuess+".")
-  startAgain()
+  start()
  }
  if(winner()) {
   alert("You win!")
-  startAgain()
+  start()
  }
 }

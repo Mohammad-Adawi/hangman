@@ -6,14 +6,14 @@
     </HEAD>
 <BODY>
     <h1>Hangman</h1>
-        <h2><INPUT TYPE="BUTTON" NAME="start" VALUE="---- Start ----" ONCLICK="startAgain()"></h2>
+        <h2><INPUT TYPE="BUTTON" NAME="start" VALUE="---- Start ----" ONCLICK="start()"></h2>
     <FORM NAME="game">
         <PRE>
             <TEXTAREA NAME="status" ROWS="7" COLS="16" ONFOCUS="stayAway()"></TEXTAREA>
         </PRE>
         
-        <INPUT TYPE="TEXT"  placeholder="Teacher Name" NAME="toGuess" ONFOCUS="stayAway()"> Word to guess<BR>
-        <INPUT TYPE="TEXT" NAME="guessed" ONFOCUS="stayAway()"> Letters guessed so far<BR>
+        <INPUT TYPE="TEXT"  placeholder="Teacher Name" NAME="toGuess" ONFOCUS="stayAway()"> Word to guess<br>
+        <INPUT TYPE="TEXT" NAME="guessed" ONFOCUS="stayAway()"> Letters guessed so far<br>
         <P>Enter your next guess.</P>
         <INPUT TYPE="BUTTON" VALUE=" A " ONCLICK="guess('A')">
         <INPUT TYPE="BUTTON" VALUE=" B " ONCLICK="guess('B')">
@@ -40,8 +40,8 @@
         <INPUT TYPE="BUTTON" VALUE=" W " ONCLICK="guess('W')">
         <INPUT TYPE="BUTTON" VALUE=" X " ONCLICK="guess('X')">
         <INPUT TYPE="BUTTON" VALUE=" Y " ONCLICK="guess('Y')">
-        <INPUT TYPE="BUTTON" VALUE=" Z " ONCLICK="guess('Z')"><br><br>
-        <INPUT TYPE="BUTTON" NAME="restart" VALUE="---- Start Again ----" ONCLICK="startAgain()">
+        <INPUT TYPE="BUTTON" VALUE=" Z " ONCLICK="guess('Z')">
+        
     </FORM>
 </BODY>
 </HTML>
